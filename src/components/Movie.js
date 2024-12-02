@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 export default function Movie() {
     const [movieList,setMovieList]=useState([])
     const getmovie=()=>{
-        fetch("https://api.themoviedb.org/3/movie/popular?api_key=8e3a61d359463f8f709da368affb1d15")
+        fetch(api movie)
         .then((response)=>response.json())
         .then((data)=>setMovieList(data.results))
     }
